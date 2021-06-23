@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDescriptionFragment">
+
+    <TextView
+        android:id="@+id/tv_product_description"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:layout_margin="16dp"
+        android:text="Tata Salt was launched in 1983 by Tata Chemicals as India's first packaged iodised salt brand. The brand is now the biggest packaged salt brand in India, with a market share of 17%.The market for packaged iodized salt in India is estimated to be worth Rs. 21.7 billion, with Tata Salt commanding a sales share of Rs 3.74 billion or 17.3% of the market. Domestic competitors include Annapurna, Captain Cook, i-shakti, Nirma Shudh and Aashirvaad.
+
+
+
+                             However major competition is only given by Surya Salt which holds the second largest market share after Tata Salt."
+        android:textColor="#000000" />
+
+</FrameLayout>

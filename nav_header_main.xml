@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/main_profile_image"
+        android:layout_width="81dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/navigation_header"
+        android:elevation="3dp"
+        android:paddingTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/main_fullname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_profile"
+        tools:ignore="VectorDrawableCompat"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/main_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="@string/not_signed_in"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/email_address"
+        android:textColor="#80ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/add_profile_icon"
+        android:layout_width="31dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="5dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/main_profile_image"
+        app:layout_constraintEnd_toEndOf="@+id/main_profile_image"
+        app:srcCompat="@drawable/add_profile_icon"
+        tools:targetApi="lollipop"
+        android:contentDescription="@string/todo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

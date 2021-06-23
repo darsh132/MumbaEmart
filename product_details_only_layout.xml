@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/product_details_container"
+    android:background="@color/sign_up_color"
+    android:elevation="3dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/product_details_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/product_details"
+        android:background="#d4d4d4"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#9c9c9c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/product_details_body"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/tata_salt_was_launched_in_1983_by_tata_chemicals_as_india_s_first_packaged_iodised_salt_brand_the_brand_is_now_the_biggest_packaged_salt_brand_in_india_with_a_market_share_of_17_the_market_for_packaged_iodized_salt_in_india_is_estimated_to_be_worth_rs_21_7_billion_with_tata_salt_commanding_a_sales_share_of_rs_3_74_billion_or_17_3_of_the_market_domestic_competitors_include_annapurna_captain_cook_i_shakti_nirma_shudh_and_aashirvaad_however_major_competition_is_only_given_by_surya_salt_which_holds_the_second_largest_market_share_after_tata_salt"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_details_title"
+        app:layout_constraintVertical_bias="0.75" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
